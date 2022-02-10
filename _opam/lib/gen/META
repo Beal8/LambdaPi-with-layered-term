@@ -1,0 +1,7 @@
+version = "0.5.3"
+description = ""
+requires = "bytes"
+archive(byte) = "gen.cma"
+archive(native) = "gen.cmxa"
+plugin(byte) = "gen.cma"
+plugin(native) = "gen.cmxs"

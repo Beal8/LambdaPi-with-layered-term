@@ -1,0 +1,33 @@
+(lang dune 2.9)
+(name mew_vi)
+(library
+ (name mew_vi)
+ (kind normal)
+ (archives (byte mew_vi.cma) (native mew_vi.cmxa))
+ (plugins (byte mew_vi.cma) (native mew_vi.cmxs))
+ (native_archives mew_vi.a)
+ (requires mew react)
+ (main_module_name Mew_vi)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name Mew_vi)
+   (modules
+    ((name Core) (obj_name mew_vi__Core) (visibility public) (impl))
+    ((name Edit_action)
+     (obj_name mew_vi__Edit_action)
+     (visibility public)
+     (impl))
+    ((name Interpret) (obj_name mew_vi__Interpret) (visibility public) (impl))
+    ((name Key) (obj_name mew_vi__Key) (visibility public) (impl))
+    ((name Mew_vi) (obj_name mew_vi) (visibility public) (impl))
+    ((name Modal) (obj_name mew_vi__Modal) (visibility public) (impl))
+    ((name Mode) (obj_name mew_vi__Mode) (visibility public) (impl))
+    ((name Vi_action) (obj_name mew_vi__Vi_action) (visibility public) (impl)))
+   (alias_module
+    (name Mew_vi__)
+    (obj_name mew_vi__)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

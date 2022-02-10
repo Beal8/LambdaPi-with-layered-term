@@ -1,0 +1,13 @@
+(lang dune 2.9)
+(name pratter)
+(version 1.2)
+(library
+ (name pratter)
+ (kind normal)
+ (archives (byte pratter.cma) (native pratter.cmxa))
+ (plugins (byte pratter.cma) (native pratter.cmxs))
+ (native_archives pratter.a)
+ (main_module_name Pratter)
+ (modes byte native)
+ (modules
+  (singleton (name Pratter) (obj_name pratter) (visibility public) (impl))))

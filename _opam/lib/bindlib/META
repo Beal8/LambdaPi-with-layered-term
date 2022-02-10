@@ -1,0 +1,8 @@
+name="bindlib"
+version="5.0.1"
+description="Efficient binder representation."
+requires=""
+archive(byte)="bindlib.cma"
+archive(native)="bindlib.cmxa"
+plugin(byte)="bindlib.cma"
+plugin(native)="bindlib.cmxs"

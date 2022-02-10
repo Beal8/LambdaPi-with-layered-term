@@ -1,0 +1,23 @@
+added: [
+  "doc/react" {"D"}
+  "doc/react/CHANGES.md" {"F:S2898T1636377686.05"}
+  "doc/react/LICENSE.md" {"F:S735T1636377686.09"}
+  "doc/react/README.md" {"F:S1699T1636377686.13"}
+  "lib/react" {"D"}
+  "lib/react/META" {"F:S468T1636377685.3"}
+  "lib/react/opam" {"F:S655T1636377685.25"}
+  "lib/react/react.a" {"F:S318194T1636377685.35"}
+  "lib/react/react.cma" {"F:S363638T1636377685.39"}
+  "lib/react/react.cmi" {"F:S51393T1636377685.45"}
+  "lib/react/react.cmti" {"F:S260067T1636377685.49"}
+  "lib/react/react.cmx" {"F:S13359T1636377685.53"}
+  "lib/react/react.cmxa" {"F:S442T1636377685.58"}
+  "lib/react/react.cmxs" {"F:S293576T1636377685.63"}
+  "lib/react/react.mli" {"F:S44928T1636377685.68"}
+  "lib/react/react_top.a" {"F:S3934T1636377685.73"}
+  "lib/react/react_top.cma" {"F:S7546T1636377685.83"}
+  "lib/react/react_top.cmx" {"F:S1252T1636377685.87"}
+  "lib/react/react_top.cmxa" {"F:S1258T1636377685.91"}
+  "lib/react/react_top.cmxs" {"F:S18768T1636377685.95"}
+  "lib/react/react_top_init.ml" {"F:S1252T1636377686."}
+]

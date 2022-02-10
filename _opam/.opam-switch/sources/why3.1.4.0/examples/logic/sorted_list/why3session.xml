@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<prover id="1" name="Coq" version="8.9.1" timelimit="5" steplimit="0" memlimit="0"/>
+<prover id="3" name="CVC3" version="2.4.1" timelimit="5" steplimit="0" memlimit="0"/>
+<prover id="4" name="Z3" version="4.6.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="5" name="Alt-Ergo" version="2.0.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="8" name="CVC4" version="1.5" timelimit="5" steplimit="0" memlimit="1000"/>
+<file format="whyml" proved="true">
+<path name=".."/><path name="sorted_list.why"/>
+<theory name="SortedList" proved="true">
+ <goal name="sorted_inf" proved="true">
+ <proof prover="4"><result status="valid" time="0.00" steps="11262"/></proof>
+ </goal>
+ <goal name="sorted_mem" proved="true">
+ <proof prover="1"><path name="sorted_list_SortedList_sorted_mem_1.v"/><result status="valid" time="0.24"/></proof>
+ </goal>
+</theory>
+<theory name="SortedIntList" proved="true">
+ <goal name="SortedList.O.le_refl" proved="true">
+ <proof prover="5"><result status="valid" time="0.00" steps="1"/></proof>
+ </goal>
+ <goal name="SortedList.O.le_asym" proved="true">
+ <proof prover="5"><result status="valid" time="0.00" steps="3"/></proof>
+ </goal>
+ <goal name="SortedList.O.le_trans" proved="true">
+ <proof prover="5"><result status="valid" time="0.00" steps="3"/></proof>
+ </goal>
+ <goal name="sorted123" proved="true">
+ <proof prover="3"><result status="valid" time="0.00"/></proof>
+ <proof prover="4"><result status="valid" time="0.00" steps="10134"/></proof>
+ <proof prover="5"><result status="valid" time="0.01" steps="5"/></proof>
+ <proof prover="8"><result status="valid" time="0.00" steps="3722"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>

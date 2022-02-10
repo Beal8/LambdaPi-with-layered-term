@@ -1,0 +1,14 @@
+added: [
+  "bin/menhir" {"F:S5011456T1636366285.6"}
+  "doc/menhir" {"D"}
+  "doc/menhir/LICENSE" {"F:S45375T1636366286.28"}
+  "doc/menhir/manual.html" {"F:S384728T1636366286.39"}
+  "doc/menhir/manual.pdf" {"F:S482766T1636366286.5"}
+  "doc/menhir/manual001.png" {"F:S4315T1636366286.62"}
+  "doc/menhir/manual002.png" {"F:S4126T1636366286.72"}
+  "doc/menhir/manual003.png" {"F:S5147T1636366286.82"}
+  "lib/menhir" {"D"}
+  "lib/menhir/META" {"F:S0T1636366285.89"}
+  "lib/menhir/dune-package" {"F:S49T1636366286.09"}
+  "man/man1/menhir.1" {"F:S5063T1636366286.18"}
+]

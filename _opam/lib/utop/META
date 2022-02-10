@@ -1,0 +1,7 @@
+version = "2.8.0"
+description = ""
+requires = "compiler-libs.toplevel findlib.top lambda-term threads"
+archive(byte) = "uTop.cma"
+archive(native) = ""
+plugin(byte) = "uTop.cma"
+plugin(native) = ""

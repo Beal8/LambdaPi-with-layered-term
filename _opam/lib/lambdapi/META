@@ -1,0 +1,81 @@
+package "common" (
+  directory = "common"
+  description = ""
+  requires = "lambdapi.lplib timed"
+  archive(byte) = "common.cma"
+  archive(native) = "common.cmxa"
+  plugin(byte) = "common.cma"
+  plugin(native) = "common.cmxs"
+  version = "6b453ab1-dirty"
+)
+package "core" (
+  directory = "core"
+  description = "LambdaPi interactive theorem prover [core]"
+  requires = "bindlib lambdapi.common lambdapi.lplib pratter why3"
+  archive(byte) = "core.cma"
+  archive(native) = "core.cmxa"
+  plugin(byte) = "core.cma"
+  plugin(native) = "core.cmxs"
+  version = "6b453ab1-dirty"
+)
+package "handle" (
+  directory = "handle"
+  description = ""
+  requires = "lambdapi.core lambdapi.parsing lambdapi.tool"
+  archive(byte) = "handle.cma"
+  archive(native) = "handle.cmxa"
+  plugin(byte) = "handle.cma"
+  plugin(native) = "handle.cmxs"
+  version = "6b453ab1-dirty"
+)
+package "lplib" (
+  directory = "lplib"
+  description = ""
+  requires = "stdlib-shims str unix"
+  archive(byte) = "lplib.cma"
+  archive(native) = "lplib.cmxa"
+  plugin(byte) = "lplib.cma"
+  plugin(native) = "lplib.cmxs"
+  version = "6b453ab1-dirty"
+)
+package "lsp" (
+  directory = "lsp"
+  description = ""
+  requires = "lambdapi.pure yojson"
+  archive(byte) = "lsp.cma"
+  archive(native) = "lsp.cmxa"
+  plugin(byte) = "lsp.cma"
+  plugin(native) = "lsp.cmxs"
+  version = "6b453ab1-dirty"
+)
+package "parsing" (
+  directory = "parsing"
+  description = ""
+  requires =
+  "lambdapi.common lambdapi.core menhirLib pratter sedlex sedlex.ppx"
+  archive(byte) = "parsing.cma"
+  archive(native) = "parsing.cmxa"
+  plugin(byte) = "parsing.cma"
+  plugin(native) = "parsing.cmxs"
+  version = "6b453ab1-dirty"
+)
+package "pure" (
+  directory = "pure"
+  description = ""
+  requires = "lambdapi.core lambdapi.handle"
+  archive(byte) = "pure.cma"
+  archive(native) = "pure.cmxa"
+  plugin(byte) = "pure.cma"
+  plugin(native) = "pure.cmxs"
+  version = "6b453ab1-dirty"
+)
+package "tool" (
+  directory = "tool"
+  description = ""
+  requires = "lambdapi.core lambdapi.parsing"
+  archive(byte) = "tool.cma"
+  archive(native) = "tool.cmxa"
+  plugin(byte) = "tool.cma"
+  plugin(native) = "tool.cmxs"
+  version = "6b453ab1-dirty"
+)

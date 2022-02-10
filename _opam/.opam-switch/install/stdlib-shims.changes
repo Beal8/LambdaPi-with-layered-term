@@ -1,0 +1,18 @@
+added: [
+  "doc/stdlib-shims" {"D"}
+  "doc/stdlib-shims/CHANGES.md" {"F:S485T1636366271.99"}
+  "doc/stdlib-shims/LICENSE" {"F:S27179T1636366272.08"}
+  "doc/stdlib-shims/README.md" {"F:S451T1636366272.17"}
+  "lib/stdlib-shims" {"D"}
+  "lib/stdlib-shims/META" {"F:S192T1636366271.15"}
+  "lib/stdlib-shims/dune-package" {"F:S382T1636366271.22"}
+  "lib/stdlib-shims/opam" {"F:S791T1636366271.29"}
+  "lib/stdlib-shims/pervasives.cmi" {"F:S26300T1636366271.35"}
+  "lib/stdlib-shims/pervasives.cmt" {"F:S72636T1636366271.41"}
+  "lib/stdlib-shims/pervasives.cmx" {"F:S5362T1636366271.47"}
+  "lib/stdlib-shims/pervasives.ml" {"F:S96T1636366271.56"}
+  "lib/stdlib-shims/stdlib_shims.a" {"F:S5726T1636366271.62"}
+  "lib/stdlib-shims/stdlib_shims.cma" {"F:S31608T1636366271.71"}
+  "lib/stdlib-shims/stdlib_shims.cmxa" {"F:S240T1636366271.81"}
+  "lib/stdlib-shims/stdlib_shims.cmxs" {"F:S18464T1636366271.9"}
+]

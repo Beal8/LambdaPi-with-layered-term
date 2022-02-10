@@ -1,0 +1,5 @@
+(library
+ (name pure)
+ (public_name lambdapi.pure)
+ (modules :standard)
+ (libraries handle core))

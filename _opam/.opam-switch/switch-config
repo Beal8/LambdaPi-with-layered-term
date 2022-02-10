@@ -1,0 +1,10 @@
+opam-version: "2.0"
+synopsis: "/home/chab/lambdapi"
+opam-root: "/home/chab/.opam"
+paths {
+  
+}
+variables {
+  user: "chab"
+  group: "chab"
+}

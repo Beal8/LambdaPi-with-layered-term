@@ -1,0 +1,7 @@
+OPAM_SWITCH_PREFIX	=	/home/chab/lambdapi/_opam	Prefix\ of\ the\ current\ opam\ switch
+CAML_LD_LIBRARY_PATH	=	/usr/local/lib/ocaml/4.08.1/stublibs:/usr/lib/ocaml/stublibs	Updated\ by\ package\ ocaml
+CAML_LD_LIBRARY_PATH	+=	/home/chab/lambdapi/_opam/lib/stublibs	Updated\ by\ package\ ocaml
+OCAML_TOPLEVEL_PATH	=	/home/chab/lambdapi/_opam/lib/toplevel	Updated\ by\ package\ ocaml
+PKG_CONFIG_PATH	+=	/home/chab/lambdapi/_opam/lib/pkgconfig	Updated\ by\ package\ conf-pkg-config
+MANPATH	=:	/home/chab/lambdapi/_opam/man	Current\ opam\ switch\ man\ dir
+PATH	=+=	/home/chab/lambdapi/_opam/bin	Binary\ dir\ for\ opam\ switch\ /home/chab/lambdapi

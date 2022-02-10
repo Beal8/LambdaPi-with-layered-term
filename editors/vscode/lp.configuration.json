@@ -1,0 +1,15 @@
+{
+    "comments": {
+        "lineComment": "//",
+        "blockComment": [ "/*", "*/" ]
+    },
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "begin\\s*$",
+        "decreaseIndentPattern": "(?<!begin.*)(end|admitted|abort)\\s*;(?!.*begin)"
+    }
+}

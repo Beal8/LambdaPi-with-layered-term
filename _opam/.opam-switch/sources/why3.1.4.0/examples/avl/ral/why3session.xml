@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<prover id="1" name="Alt-Ergo" version="2.0.0" timelimit="1" steplimit="0" memlimit="1000"/>
+<file format="whyml" proved="true">
+<path name=".."/><path name="ral.mlw"/>
+<theory name="RAL" proved="true">
+ <goal name="M.assoc" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="M.neutral" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="M.M.assoc" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="M.M.neutral" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="M.zero&#39;vc" expl="VC for zero" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="M.op&#39;vc" expl="VC for op" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="agg_measure_is_length&#39;vc" expl="VC for agg_measure_is_length" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="50"/></proof>
+ </goal>
+ <goal name="selected_part&#39;vc" expl="VC for selected_part" proved="true">
+ <proof prover="1"><result status="valid" time="0.12" steps="729"/></proof>
+ </goal>
+ <goal name="Sel.M.assoc" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="Sel.M.neutral" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="Sel.M.zero&#39;vc" expl="VC for zero" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="Sel.M.op&#39;vc" expl="VC for op" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="Sel.M.agg_empty" proved="true">
+ <proof prover="1"><result status="valid" time="0.02" steps="6"/></proof>
+ </goal>
+ <goal name="Sel.M.agg_sing" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="19"/></proof>
+ </goal>
+ <goal name="Sel.M.agg_cat" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="5"/></proof>
+ </goal>
+ <goal name="Sel.balancing&#39;vc" expl="VC for balancing" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="Sel.selection_empty" proved="true">
+ <proof prover="1"><result status="valid" time="0.02" steps="35"/></proof>
+ </goal>
+ <goal name="Sel.selected_part&#39;vc" expl="VC for selected_part" proved="true">
+ <proof prover="1"><result status="valid" time="0.10" steps="397"/></proof>
+ </goal>
+ <goal name="empty&#39;vc" expl="VC for empty" proved="true">
+ <proof prover="1"><result status="valid" time="0.02" steps="6"/></proof>
+ </goal>
+ <goal name="singleton&#39;vc" expl="VC for singleton" proved="true">
+ <proof prover="1"><result status="valid" time="0.02" steps="6"/></proof>
+ </goal>
+ <goal name="is_empty&#39;vc" expl="VC for is_empty" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="decompose_front&#39;vc" expl="VC for decompose_front" proved="true">
+ <proof prover="1"><result status="valid" time="0.03" steps="59"/></proof>
+ </goal>
+ <goal name="decompose_back&#39;vc" expl="VC for decompose_back" proved="true">
+ <proof prover="1"><result status="valid" time="0.04" steps="59"/></proof>
+ </goal>
+ <goal name="front&#39;vc" expl="VC for front" proved="true">
+ <proof prover="1"><result status="valid" time="0.02" steps="4"/></proof>
+ </goal>
+ <goal name="back&#39;vc" expl="VC for back" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="4"/></proof>
+ </goal>
+ <goal name="cons&#39;vc" expl="VC for cons" proved="true">
+ <proof prover="1"><result status="valid" time="0.02" steps="7"/></proof>
+ </goal>
+ <goal name="snoc&#39;vc" expl="VC for snoc" proved="true">
+ <proof prover="1"><result status="valid" time="0.02" steps="7"/></proof>
+ </goal>
+ <goal name="concat&#39;vc" expl="VC for concat" proved="true">
+ <proof prover="1"><result status="valid" time="0.03" steps="4"/></proof>
+ </goal>
+ <goal name="length&#39;vc" expl="VC for length" proved="true">
+ <proof prover="1"><result status="valid" time="0.01" steps="5"/></proof>
+ </goal>
+ <goal name="set&#39;vc" expl="VC for set" proved="true">
+ <proof prover="1"><result status="valid" time="0.20" steps="492"/></proof>
+ </goal>
+ <goal name="get&#39;vc" expl="VC for get" proved="true">
+ <proof prover="1"><result status="valid" time="0.07" steps="106"/></proof>
+ </goal>
+ <goal name="insert&#39;vc" expl="VC for insert" proved="true">
+ <proof prover="1"><result status="valid" time="0.28" steps="533"/></proof>
+ </goal>
+ <goal name="remove&#39;vc" expl="VC for remove" proved="true">
+ <proof prover="1"><result status="valid" time="0.21" steps="392"/></proof>
+ </goal>
+ <goal name="cut&#39;vc" expl="VC for cut" proved="true">
+ <proof prover="1"><result status="valid" time="0.09" steps="181"/></proof>
+ </goal>
+ <goal name="split&#39;vc" expl="VC for split" proved="true">
+ <proof prover="1"><result status="valid" time="0.15" steps="355"/></proof>
+ </goal>
+ <goal name="harness&#39;vc" expl="VC for harness" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="harness&#39;vc.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.03" steps="6"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.1" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.03" steps="9"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.2" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="12"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.3" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.03" steps="15"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.4" expl="check" proved="true">
+  <proof prover="1"><result status="valid" time="0.06" steps="142"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.5" expl="check" proved="true">
+  <proof prover="1"><result status="valid" time="0.07" steps="142"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.6" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.03" steps="18"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.7" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.02" steps="20"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.8" expl="check" proved="true">
+  <proof prover="1"><result status="valid" time="0.58" steps="536"/></proof>
+  </goal>
+  <goal name="harness&#39;vc.9" expl="check" proved="true">
+  <proof prover="1" timelimit="5"><result status="valid" time="1.02" steps="501"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="harness2&#39;vc" expl="VC for harness2" proved="true">
+ <proof prover="1"><result status="valid" time="0.11" steps="223"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>

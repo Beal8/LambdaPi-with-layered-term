@@ -1,0 +1,76 @@
+open Core
+open Layer
+open Parsing
+open Maker
+
+let testons1 () =
+  let st,ss = Lp.create_symbole "N" Term.mk_Type in
+  let addterm = Lp.term ?sig_st:(Some st) "N → N → N" in
+  let st,ss = Lp.create_symbole ?ss:(Some ss) "add" addterm in
+  let nterm = Lp.term ?sig_st:(Some st) "N" in
+  let st,ss = Lp.create_symbole ?ss:(Some ss) "zero" nterm in
+  let test1 = Lp.term ?sig_st:(Some st) "add zero (add zero zero)" in
+  let ltest1 = term_to_layered_term [] test1 [("N",Zero);("add", parse "k->k->k");("zero", Zero)] in
+  let ltest1 = refine [] 1 0 ltest1 in
+  let ltest1 = refine [] 2 0 ltest1 in
+  let ltest1 = refine [] 3 0 ltest1 in
+  let ltest1 = refine [] 4 0 ltest1 in
+  let ltest1 = refine [] 5 0 ltest1 in
+  let ltest1 = refine [] 6 0 ltest1 in
+  let ltest1 = refine [] 7 0 ltest1 in
+  let s = pprint ltest1 in
+  let ds = dlprint ltest1 in
+  print_string s;
+  print_string ds;;
+  
+  let testons () =
+  let st,ss = Lp.create_symbole "N" Term.mk_Type in
+  let addterm = Lp.term ?sig_st:(Some st) "N → N → N" in
+  let st,ss = Lp.create_symbole ?ss:(Some ss) "add" addterm in
+  let nterm = Lp.term ?sig_st:(Some st) "N" in
+  let st,ss = Lp.create_symbole ?ss:(Some ss) "zero" nterm in
+  let test = Lp.term ?sig_st:(Some st) "add (add zero zero) zero" in
+  let ltest = term_to_layered_term [] test [("N",Zero);("add", parse "k->k->k");("zero", Zero)] in
+  let ltest = refine [] 1 0 ltest in
+  let ltest = refine [] 2 0 ltest in
+  let ltest = refine [] 3 0 ltest in
+  let ltest = refine [] 4 0 ltest in
+  let ltest = refine [] 5 0 ltest in
+  let ltest = refine [] 6 0 ltest in
+  let ltest = refine [] 7 0 ltest in
+  let s = pprint ltest in
+  let ds = dlprint ltest in
+  print_string s;
+  print_string "\n \n";
+  print_string ds;;
+  
+ let testonslayers () =
+ 	let st,ss = Lp.create_symbole "N" Term.mk_Type in
+  	let addterm = Lp.term ?sig_st:(Some st) "N → N → N" in
+  	let st,ss = Lp.create_symbole ?ss:(Some ss) "add" addterm in
+  	let nterm = Lp.term ?sig_st:(Some st) "N" in
+	let st,ss = Lp.create_symbole ?ss:(Some ss) "zero" nterm in
+	let test1 = Lp.term ?sig_st:(Some st) "add (add zero zero) zero" in
+	print_string("ok");
+	let ltest1 = term_to_layered_term [] test1 [("N",Zero);("add", parse "k->k->k");("zero", Zero)] in
+	print_string("erreur en haut");
+	let ltest1 = refine [] 1 1 ltest1 in
+	let ltest1 = refine [] 2 0 ltest1 in
+	let ltest1 = refine [] 3 1 ltest1 in
+	let ltest1 = refine [] 4 1 ltest1 in
+	let ltest1 = refine [] 5 0 ltest1 in
+	let ltest1 = refine [] 6 1 ltest1 in
+	let ltest1 = refine [] 7 1 ltest1 in
+	let ltest1 = refine [] 8 1 ltest1 in
+	let ltest1 = refine [] 9 1 ltest1 in
+	let ltest1 = refine [] 10 0 ltest1 in
+	let ltest1 = refine [] 11 1 ltest1 in
+	let ltest1 = refine [] 12 1 ltest1 in
+	let ltest1 = refine [] 13 1 ltest1 in
+	print_string("refined");
+	let s = dlprint ltest1 in
+	let args = get_symbol_arguments ((fst (get_symb_application_name_layer ltest1)).sym_name) ltest1 in 
+	let args_layer = List.map (get_layer) args in 
+	print_string s;
+	check_layer ltest1;;
+	

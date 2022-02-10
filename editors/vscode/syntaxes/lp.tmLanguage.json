@@ -1,0 +1,82 @@
+{
+  "scopeName": "source.lp",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#tactics"
+    },
+    {
+      "include": "#signature-commands"
+    },
+    {
+      "include": "#warning"
+    },
+    {
+      "include": "#misc"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#external"
+    }
+  ],
+  "repository": {
+    "commands": {
+      "match": "\\b(abort|admit|admitted|apply|as|assert|assertnot|associative|assume|begin|builtin|commutative|compute|constant|debug|end|fail|flag|focus|generalize|have|in|induction|inductive|infix|injective|left|let|notation|off|on|open|opaque|prefix|print|private|proofterm|protected|prover|prover_timeout|quantifier|refine|reflexivity|require|rewrite|rule|sequential|simplify|symbol|symmetry|type|TYPE|unif_rule|why3|with)\\b",
+      "name": "keyword.control.lp"
+    },
+    "comments": {
+      "patterns": [
+        {
+          "begin": "//",
+          "end": "$",
+          "name": "comment.line.double-slash.lp"
+        },
+        {
+          "begin": "/\\*",
+          "end": "\\*/",
+          "name": "comment.block.lp"
+        }
+      ]
+    },
+
+    "tactics": {
+      "match": "\\b(apply|assume|fail|focus|generalize|have|induction|refine|reflexivity|rewrite|simplify|solve|symmetry|why3)\\b",
+      "name": "keyword.control.tactics.lp"
+    },
+
+    "signature-commands": {
+      "match": "(inductive|symbol|rule|with)\\s+([^\\s+]*)",
+      "captures": {
+        "1": {"name": "storage.type.lp"},
+        "2": {"name": "entity.name.function.theorem.lp"}
+      }
+    },
+
+    "external": {
+      "match": "(open|require)\\s+(([^\\s+]*\\s+)*$)",
+      "captures": {
+        "1": {"name": "storage.type.lp"},
+        "2": {"name": "entity.name.function.theorem.lp"}
+      }
+    },
+
+    "warning": {
+      "match": "\\b(abort|admit|admitted|fail)\\b",
+      "name": "keyword.control.warning.lp"
+    },
+
+    "misc": {
+      "match": "\\b(assert|assernot|compute|print|proofterm|type)\\b",
+      "name": "keyword.control.query.lp"
+    },
+
+    "keywords": {
+      "match": "\\b(as|associative|begin|builtin|commutative|constant|debug|end|flag|in|infix|injective|left|off|notation|on|opaque|prover|prover_timeout|prefix|private|protected|quantifier|right|sequential|TYPE|unif_rule)\\b",
+      "name": "storage.modifier.lp"
+    }    
+  }
+}

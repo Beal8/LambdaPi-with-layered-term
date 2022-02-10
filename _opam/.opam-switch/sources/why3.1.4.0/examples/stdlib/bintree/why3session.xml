@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<prover id="2" name="Alt-Ergo" version="2.0.0" timelimit="6" steplimit="0" memlimit="1000"/>
+<file format="whyml" proved="true">
+<path name=".."/><path name=".."/><path name=".."/><path name="stdlib"/>
+<path name="bintree.mlw"/>
+<theory name="Tree" proved="true">
+ <goal name="is_empty&#39;vc" expl="VC for is_empty" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="is_empty&#39;vc.0" expl="postcondition" proved="true">
+  <proof prover="2" timelimit="5"><result status="valid" time="0.00" steps="3"/></proof>
+  </goal>
+  <goal name="is_empty&#39;vc.1" expl="postcondition" proved="true">
+  <proof prover="2" timelimit="5"><result status="valid" time="0.00" steps="5"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Size" proved="true">
+ <goal name="size_nonneg" proved="true">
+ <transf name="induction_ty_lex" proved="true" >
+  <goal name="size_nonneg.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.01" steps="6"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="size_empty" proved="true">
+ <transf name="induction_ty_lex" proved="true" >
+  <goal name="size_empty.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.01" steps="18"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Occ" proved="true">
+ <goal name="occ_nonneg" proved="true">
+ <transf name="induction_ty_lex" proved="true" >
+  <goal name="occ_nonneg.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.01" steps="11"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Height" proved="true">
+ <goal name="height_nonneg" proved="true">
+ <transf name="induction_ty_lex" proved="true" >
+  <goal name="height_nonneg.0" proved="true">
+  <proof prover="2" timelimit="5"><result status="valid" time="0.01" steps="13"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="InorderLength" proved="true">
+ <goal name="inorder_length" proved="true">
+ <transf name="induction_ty_lex" proved="true" >
+  <goal name="inorder_length.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.01" steps="34"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

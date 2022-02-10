@@ -1,0 +1,12 @@
+(lang dune 2.9)
+(name trie)
+(library
+ (name trie)
+ (kind normal)
+ (archives (byte trie.cma) (native trie.cmxa))
+ (plugins (byte trie.cma) (native trie.cmxs))
+ (native_archives trie.a)
+ (main_module_name Trie)
+ (modes byte native)
+ (modules
+  (singleton (name Trie) (obj_name trie) (visibility public) (impl) (intf))))

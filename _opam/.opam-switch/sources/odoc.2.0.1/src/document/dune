@@ -1,0 +1,6 @@
+(library
+ (name odoc_document)
+ (public_name odoc.document)
+ (instrumentation
+  (backend bisect_ppx))
+ (libraries odoc_model fmt fpath))

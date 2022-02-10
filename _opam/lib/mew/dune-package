@@ -1,0 +1,28 @@
+(lang dune 2.9)
+(name mew)
+(library
+ (name mew)
+ (kind normal)
+ (archives (byte mew.cma) (native mew.cmxa))
+ (plugins (byte mew.cma) (native mew.cmxs))
+ (native_archives mew.a)
+ (requires result trie)
+ (main_module_name Mew)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name Mew)
+   (modules
+    ((name Concurrent) (obj_name mew__Concurrent) (visibility public) (impl))
+    ((name Key) (obj_name mew__Key) (visibility public) (impl))
+    ((name Mew) (obj_name mew) (visibility public) (impl))
+    ((name Modal) (obj_name mew__Modal) (visibility public) (impl))
+    ((name Mode) (obj_name mew__Mode) (visibility public) (impl))
+    ((name Utils) (obj_name mew__Utils) (visibility public) (impl)))
+   (alias_module
+    (name Mew__)
+    (obj_name mew__)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

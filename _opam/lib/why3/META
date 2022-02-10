@@ -1,0 +1,6 @@
+description = "Why3 library"
+version = "1.4.0"
+archive(byte) = "why3.cma"
+archive(native) = "why3.cmxa"
+plugin(native) = "why3.cmxs"
+requires = " re unix num dynlink menhirLib   "
